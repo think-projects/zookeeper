@@ -63,9 +63,9 @@ public class ZooKeeperServerMain {
      * @param args the configfile or the port datadir [ticktime]
      */
     public static void main(String[] args) {
-        ZooKeeperServerMain main = new ZooKeeperServerMain();
+        ZooKeeperServerMain main = new ZooKeeperServerMain(); // 服务端主类
         try {
-            main.initializeAndRun(args);
+            main.initializeAndRun(args); // 初始运行
         } catch (IllegalArgumentException e) {
             LOG.error("Invalid arguments, exiting abnormally", e);
             LOG.info(USAGE);
